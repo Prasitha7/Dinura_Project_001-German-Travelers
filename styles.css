@@ -1,0 +1,130 @@
+/* Keep page background transparent so canvas shows through */
+html, body { background: transparent; }
+
+/* Full-viewport, fixed, non-interactive canvas behind all content */
+#bg-canvas {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100dvh;
+  z-index: -1;
+  pointer-events: none;
+  display: block;
+}
+
+
+/* A safe, responsive hero height that never exceeds the viewport */
+.hero-carousel {
+  position: relative;
+  width: 100%;
+  /* Pick one of these height strategies: */
+  height: clamp(320px, 70vh, 900px); /* Option A: nice hero band */
+  /* height: 100dvh; */              /* Option B: full screen hero */
+  max-height: 100dvh;                /* never exceed viewport */
+  overflow: hidden;                  /* prevent bleed */
+}
+
+/* Make each slide fill the hero box */
+.hero-carousel .carousel,
+.hero-carousel .carousel-inner,
+.hero-carousel .carousel-item {
+  height: 100%;
+}
+
+/* Make images scale and crop without stretching */
+.hero-carousel .carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;    /* maintains aspect ratio, fills box */
+  object-position: center;
+  display: block;       /* avoid inline-image gaps */
+}
+
+
+
+
+.button-52 {
+  font-size: 2rem;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 13px 20px 13px;
+  outline: 0;
+  border: 1px solid black;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-52:after {
+  content: "";
+  background-color: #ffe54c;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+
+.button-52:hover:after {
+  top: 0px;
+  left: 0px;
+}
+
+@media (min-width: 768px) {
+  .button-52 {
+    padding: 13px 50px 13px;
+  }
+}
+
+
+
+.button-51 {
+  position: relative;
+  display: inline-block;
+  background: transparent;
+  border: none; /* we'll draw border on ::after */
+  color: #00132C;
+  font: 700 16px/24px "Avenir Next LT W01 Bold", sans-serif;
+  padding: 16px 23px;
+  cursor: pointer;
+  isolation: isolate; /* own stacking context */
+}
+
+.button-51 > span {
+  position: relative;
+  z-index: 2; /* above plate & border */
+}
+
+/* Light blue plate */
+.button-51::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #D5EDF6;
+  transform: translate(7px, -9px); /* shift to top right */
+  z-index: 0;
+}
+
+/* Border overlay */
+.button-51::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 1px solid #266DB6;
+  z-index: 1; /* above plate, below text */
+  pointer-events: none;
+}
+
+.button-51:hover::before {
+  background: #6DCFF6; /* darker blue on hover */
+}
+
+@media (min-width: 768px) {
+  .button-51 { padding: 16px 32px; }
+}
+
