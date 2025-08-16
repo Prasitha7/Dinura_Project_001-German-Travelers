@@ -5,8 +5,9 @@ document.addEventListener("DOMContentLoaded", function () {
     return;
   }
   window.init3DHero({
-    modelPath: "../assets/models/beauty_of_srilanka.glb",
-    cameraDistance: 5,
+    modelPath: "../../assets/models/beauty_of_srilanka.glb",
+    cameraDistance: 25,
     modelEnvIntensity: 3.5
+    
   });
 });
