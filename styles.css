@@ -1,47 +1,120 @@
-/* Keep page background transparent so canvas shows through */
-html, body { background: transparent; }
+/* =========================
+   GLOBAL TRANSPARENCY & CANVAS
+   ========================= */
+:root {
+  --glass-bg: rgba(255, 255, 255, 0.08);
+  --glass-border: rgba(255, 255, 255, 0.22);
+  --glass-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  --glass-blur: 14px;
+  --scrim: linear-gradient(180deg, rgba(0,0,0,.35), rgba(0,0,0,0));
+}
 
-/* Full-viewport, fixed, non-interactive canvas behind all content */
+html, body { background: transparent !important; min-height: 100%; }
+
 #bg-canvas {
   position: fixed;
   inset: 0;
   width: 100vw;
   height: 100dvh;
   z-index: -1;
-  pointer-events: none;
+  pointer-events: none; /* UI remains fully interactive */
   display: block;
 }
 
+/* Keep stacking sane */
+.z-top { position: relative; z-index: 10; }
+
+/* =========================
+   HERO LAYOUT
+   ========================= */
 
 /* A safe, responsive hero height that never exceeds the viewport */
 .hero-carousel {
   position: relative;
   width: 100%;
-  /* Pick one of these height strategies: */
-  height: clamp(320px, 70vh, 900px); /* Option A: nice hero band */
-  /* height: 100dvh; */              /* Option B: full screen hero */
-  max-height: 100dvh;                /* never exceed viewport */
-  overflow: hidden;                  /* prevent bleed */
+  height: clamp(320px, 70vh, 900px);
+  max-height: 100dvh;
+  overflow: hidden;
 }
 
 /* Make each slide fill the hero box */
 .hero-carousel .carousel,
 .hero-carousel .carousel-inner,
-.hero-carousel .carousel-item {
-  height: 100%;
-}
+.hero-carousel .carousel-item { height: 100%; }
 
-/* Make images scale and crop without stretching */
+/* Hide hero images to reveal 3D canvas, preserve layout */
 .hero-carousel .carousel-item img {
   width: 100%;
   height: 100%;
-  object-fit: cover;    /* maintains aspect ratio, fills box */
+  object-fit: cover;
   object-position: center;
-  display: block;       /* avoid inline-image gaps */
+  display: none !important;
 }
 
+/* Gentle contrast behind overlay text */
+.hero-scrim::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--scrim);
+  pointer-events: none;
+  z-index: 0;
+}
 
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  align-items: center;
+  z-index: 1;
+}
 
+.hero-overlay .blockquote,
+.hero-overlay .blockquote-footer,
+.hero-overlay h1, .hero-overlay h3, .hero-overlay h5 {
+  color: #fff;
+  text-shadow: 0 2px 12px rgba(0,0,0,.45);
+}
+
+/* =========================
+   BOOTSTRAP SURFACE TRANSPARENCY
+   ========================= */
+
+.navbar {
+  background: var(--glass-bg) !important;
+  -webkit-backdrop-filter: blur(var(--glass-blur));
+  backdrop-filter: blur(var(--glass-blur));
+  border-bottom: 1px solid var(--glass-border);
+  box-shadow: var(--glass-shadow);
+}
+
+/* Make general sections transparent so the canvas shows */
+.container,
+.container-fluid,
+section,
+footer,
+.bg-body,
+.bg-body-tertiary,
+.bg-light,
+.bg-white {
+  background: transparent !important;
+}
+
+/* Cards with glassmorphism */
+.card {
+  background: var(--glass-bg) !important;
+  -webkit-backdrop-filter: blur(var(--glass-blur)) saturate(140%);
+  backdrop-filter: blur(var(--glass-blur)) saturate(140%);
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--glass-shadow);
+  color: #fff;
+}
+.card .card-title,
+.card .card-text { color: #fff; }
+
+/* =========================
+   BUTTONS (from your snippet, unchanged)
+   ========================= */
 
 .button-52 {
   font-size: 2rem;
@@ -70,18 +143,11 @@ html, body { background: transparent; }
   transition: 0.2s;
 }
 
-.button-52:hover:after {
-  top: 0px;
-  left: 0px;
-}
+.button-52:hover:after { top: 0px; left: 0px; }
 
 @media (min-width: 768px) {
-  .button-52 {
-    padding: 13px 50px 13px;
-  }
+  .button-52 { padding: 13px 50px 13px; }
 }
-
-
 
 .button-51 {
   position: relative;
@@ -95,10 +161,7 @@ html, body { background: transparent; }
   isolation: isolate; /* own stacking context */
 }
 
-.button-51 > span {
-  position: relative;
-  z-index: 2; /* above plate & border */
-}
+.button-51 > span { position: relative; z-index: 2; }
 
 /* Light blue plate */
 .button-51::before {
@@ -120,11 +183,8 @@ html, body { background: transparent; }
   pointer-events: none;
 }
 
-.button-51:hover::before {
-  background: #6DCFF6; /* darker blue on hover */
-}
+.button-51:hover::before { background: #6DCFF6; }
 
 @media (min-width: 768px) {
   .button-51 { padding: 16px 32px; }
 }
-
