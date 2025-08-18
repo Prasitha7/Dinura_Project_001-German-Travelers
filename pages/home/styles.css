@@ -1,0 +1,81 @@
+/* --- Global helpers --- */
+.glassy-nav {
+  backdrop-filter: blur(6px);
+  background-color: rgba(255, 255, 255, 0.75) !important;
+}
+
+/* Keep your hero setup; just ensure image fill and title sizing */
+.hero-carousel,
+.hero-carousel .carousel,
+.hero-carousel .carousel-inner,
+.hero-carousel .carousel-item { height: clamp(320px, 70vh, 900px); }
+.hero-carousel .carousel-item > img {
+  width: 100%; height: 100%; object-fit: cover;
+}
+.hero-overlay { position: absolute; inset: 0; display: grid; align-items: center; }
+.hero-title { font-size: clamp(2.5rem, 6vw, 5rem); font-weight: 800; line-height: 1.05; }
+
+/* Section headings */
+.section-title {
+  font-weight: 800;
+  letter-spacing: 0.2px;
+}
+
+/* Intro text width for readability */
+.intro-text {
+  max-width: 880px;
+}
+
+/* Feature cards */
+.feature .icon-wrap {
+  width: 44px; height: 44px; display: grid; place-items: center;
+  border-radius: 12px; margin-bottom: .5rem;
+  background: var(--tula-accent, #0d6efd13);
+  font-size: 1.2rem;
+}
+.feature .card-title { font-weight: 700; }
+
+/* Sample itinerary highlight */
+.itinerary .card-body { border-left: 4px solid var(--tula-accent, #0d6efd); }
+
+/* Gallery */
+.gallery-img { aspect-ratio: 4 / 3; object-fit: cover; }
+
+/* CTA band (choose one of your brand colors) */
+.cta-band { background: linear-gradient(90deg, #0d6efd 0%, #003a86 100%); }
+
+/* Floating WhatsApp */
+.wa-fab {
+  position: fixed; right: 18px; bottom: 18px;
+  width: 56px; height: 56px; border-radius: 50%;
+  display: grid; place-items: center; border: 0;
+  background: #25D366; color: #fff; font-size: 1.6rem;
+  box-shadow: 0 10px 24px rgba(0,0,0,.2); z-index: 1100;
+}
+.wa-fab:active { transform: translateY(1px); }
+
+.wa-popup {
+  position: fixed; right: 18px; bottom: 86px; width: min(92vw, 320px);
+  border: 0; border-radius: 16px; display: none; z-index: 1100;
+}
+.wa-popup.show { display: block; }
+
+/* Optional: fine-tune your custom buttons if needed to harmonize */
+.button-51, .button-52 { text-decoration: none; }
+
+/* Palette variables: set once to switch blue/brown quickly */
+:root {
+  /* Blue theme (default) */
+  --tula-accent: #0d6efd;
+}
+
+/* If you want brown theme, override like this: */
+/*
+:root {
+  --tula-accent: #8b5e34;
+}
+.cta-band { background: linear-gradient(90deg, #8b5e34 0%, #5d3b1e 100%); }
+.feature .icon-wrap { background: #8b5e3413; }
+.itinerary .card-body { border-left-color: #8b5e34; }
+}
+*/
