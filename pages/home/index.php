@@ -45,7 +45,7 @@
 
     <!-- Intro -->
     <section class="container text-center py-5">
-      <p class="lead mx-auto intro-text">
+      <p class="lead mx-auto intro-text text-white">
         At TULA REISEN, we craft personalized travel experiences in Sri Lanka for German-speaking travelers.
         Whether you're seeking untouched nature, cultural depth, or slow-paced beach life, we design journeys
         that go beyond the typical tourist trail — while ensuring comfort and care every step of the way.
@@ -59,8 +59,8 @@
     <!-- Why Travel With Us -->
     <section id="why" class="container py-5">
       <div class="text-center mb-4">
-        <h2 class="section-title">Why Travel with Us</h2>
-        <p class="text-muted">Tailor-made, local, and deeply authentic.</p>
+        <h2 class="section-title" style="color: #FFD700;">Why Travel with Us</h2>
+        <p style="color: #FFD700;">Tailor-made, local, and deeply authentic.</p>
       </div>
       <div class="row g-4 justify-content-center">
         <div class="col-12 col-sm-6 col-lg-4">
@@ -114,15 +114,15 @@
     <!-- Offers / Travel Packages -->
     <section id="offers" class="container py-5">
       <div class="text-center mb-4">
-        <h2 class="section-title">Custom Sri Lanka Tours, Designed Just for You</h2>
-        <p class="text-muted">No one-size-fits-all — we build to your style, interests, and pace.</p>
+        <h2 class="section-title" style="color: #FFD700;">Custom Sri Lanka Tours, Designed Just for You</h2>
+        <p style="color: #FFD700;">No one-size-fits-all — we build to your style, interests, and pace.</p>
       </div>
 
       <div class="row g-4">
         <!-- Nature & Wildlife -->
         <div class="col-12 col-md-6 col-lg-4">
           <div class="card h-100 shadow-sm">
-            <img class="card-img-top" src="../../assets/images/offers/nature.jpg" alt="Nature & Wildlife">
+            <img class="card-img-top" src="../../assets/images/n-1.jpg" alt="Nature & Wildlife">
             <div class="card-body">
               <h5 class="card-title">Nature &amp; Wildlife</h5>
               <p class="card-text">Safaris, jungles, and quiet parks with fewer crowds.</p>
@@ -134,7 +134,7 @@
         <!-- Cultural Journeys -->
         <div class="col-12 col-md-6 col-lg-4">
           <div class="card h-100 shadow-sm">
-            <img class="card-img-top" src="../../assets/images/offers/culture.jpg" alt="Cultural Journeys">
+            <img class="card-img-top" src="../../assets/images/n-2.jpg" alt="Cultural Journeys">
             <div class="card-body">
               <h5 class="card-title">Cultural Journeys</h5>
               <p class="card-text">Temples, traditions, crafts — meaningful local encounters.</p>
@@ -146,7 +146,7 @@
         <!-- Beach Escapes -->
         <div class="col-12 col-md-6 col-lg-4">
           <div class="card h-100 shadow-sm">
-            <img class="card-img-top" src="../../assets/images/offers/beach.jpg" alt="Beach Escapes">
+            <img class="card-img-top" src="../../assets/images/n-3.jpg" alt="Beach Escapes">
             <div class="card-body">
               <h5 class="card-title">Beach Escapes</h5>
               <p class="card-text">South coast beauty, surfing, and slow beach life.</p>
@@ -158,7 +158,7 @@
         <!-- Tea Country -->
         <div class="col-12 col-md-6 col-lg-4">
           <div class="card h-100 shadow-sm">
-            <img class="card-img-top" src="../../assets/images/offers/tea.jpg" alt="Tea Country Trails">
+            <img class="card-img-top" src="../../assets/images/n-4.jpg" alt="Tea Country Trails">
             <div class="card-body">
               <h5 class="card-title">Tea Country Trails</h5>
               <p class="card-text">Scenic trains, mountain views, cool breezes.</p>
@@ -170,7 +170,7 @@
         <!-- Family -->
         <div class="col-12 col-md-6 col-lg-4">
           <div class="card h-100 shadow-sm">
-            <img class="card-img-top" src="../../assets/images/offers/family.jpg" alt="Family-Friendly Adventures">
+            <img class="card-img-top" src="../../assets/images/n-5.jpg" alt="Family-Friendly Adventures">
             <div class="card-body">
               <h5 class="card-title">Family-Friendly Adventures</h5>
               <p class="card-text">Memories for all ages, paced for comfort and fun.</p>
@@ -182,7 +182,7 @@
         <!-- Honeymoons -->
         <div class="col-12 col-md-6 col-lg-4">
           <div class="card h-100 shadow-sm">
-            <img class="card-img-top" src="../../assets/images/offers/honeymoon.jpg" alt="Honeymoons & Romantic Travel">
+            <img class="card-img-top" src="../../assets/images/n-6.jpg" alt="Honeymoons & Romantic Travel">
             <div class="card-body">
               <h5 class="card-title">Honeymoons &amp; Romance</h5>
               <p class="card-text">Secluded stays, sunsets, and special touches.</p>
@@ -210,19 +210,19 @@
     <!-- Gallery -->
     <section id="gallery" class="container py-5">
       <div class="text-center mb-4">
-        <h2 class="section-title">A Glimpse Into the Beauty of Sri Lanka</h2>
-        <p class="text-muted mb-0">Nature, culture, food, and those unforgettable moments.</p>
+        <h2 class="section-title" style="color: #FFD700;">A Glimpse Into the Beauty of Sri Lanka</h2>
+        <p style="color: #FFD700;" class="mb-0">Nature, culture, food, and those unforgettable moments.</p>
       </div>
       <div class="row g-3">
         <!-- Use your real images; these are placeholders -->
-        <div class="col-6 col-md-4 col-lg-3"><img class="rounded-3 w-100 shadow-sm gallery-img" src="../../assets/images/gallery/1.jpg" alt="Nature & Landscapes"></div>
-        <div class="col-6 col-md-4 col-lg-3"><img class="rounded-3 w-100 shadow-sm gallery-img" src="../../assets/images/gallery/2.jpg" alt="People & Culture"></div>
-        <div class="col-6 col-md-4 col-lg-3"><img class="rounded-3 w-100 shadow-sm gallery-img" src="../../assets/images/gallery/3.jpg" alt="Food & Markets"></div>
-        <div class="col-6 col-md-4 col-lg-3"><img class="rounded-3 w-100 shadow-sm gallery-img" src="../../assets/images/gallery/4.jpg" alt="Hidden Gems"></div>
-        <div class="col-6 col-md-4 col-lg-3"><img class="rounded-3 w-100 shadow-sm gallery-img" src="../../assets/images/gallery/5.jpg" alt="Travelers’ Moments"></div>
-        <div class="col-6 col-md-4 col-lg-3"><img class="rounded-3 w-100 shadow-sm gallery-img" src="../../assets/images/gallery/6.jpg" alt="Nature & Landscapes"></div>
-        <div class="col-6 col-md-4 col-lg-3"><img class="rounded-3 w-100 shadow-sm gallery-img" src="../../assets/images/gallery/7.jpg" alt="People & Culture"></div>
-        <div class="col-6 col-md-4 col-lg-3"><img class="rounded-3 w-100 shadow-sm gallery-img" src="../../assets/images/gallery/8.jpg" alt="Food & Markets"></div>
+        <div class="col-6 col-md-4 col-lg-3"><img class="rounded-3 w-100 shadow-sm gallery-img" src="../../assets/images/pexels-alexazabache-3250362.jpg" alt="Nature & Landscapes"></div>
+        <div class="col-6 col-md-4 col-lg-3"><img class="rounded-3 w-100 shadow-sm gallery-img" src="../../assets/images/pexels-jalitha-hewage-1324742-2547175.jpg" alt="People & Culture"></div>
+        <div class="col-6 col-md-4 col-lg-3"><img class="rounded-3 w-100 shadow-sm gallery-img" src="../../assets/images/pexels-freestockpro-321524.jpg" alt="Food & Markets"></div>
+        <div class="col-6 col-md-4 col-lg-3"><img class="rounded-3 w-100 shadow-sm gallery-img" src="../../assets/images/pexels-kavindra-yasas-175608-3073033.jpg" alt="Hidden Gems"></div>
+        <div class="col-6 col-md-4 col-lg-3"><img class="rounded-3 w-100 shadow-sm gallery-img" src="../../assets/images/pexels-tomas-malik-793526-1998439.jpg" alt="Travelers’ Moments"></div>
+        <div class="col-6 col-md-4 col-lg-3"><img class="rounded-3 w-100 shadow-sm gallery-img" src="../../assets/images/pexels-freestockpro-321571.jpg" alt="Nature & Landscapes"></div>
+        <div class="col-6 col-md-4 col-lg-3"><img class="rounded-3 w-100 shadow-sm gallery-img" src="../../assets/images/pexels-genine-alyssa-pedreno-andrada-1263127-2403209.jpg" alt="People & Culture"></div>
+        <div class="col-6 col-md-4 col-lg-3"><img class="rounded-3 w-100 shadow-sm gallery-img" src="../../assets/images/90894_Tourism-accounts-for-a-large-part-of-Sri-Lankas-economy.jpg" alt="Food & Markets"></div>
       </div>
       <div class="text-center mt-4">
         <a class="button-51" role="button" href="https://wa.me/94700000000?text=Can%20you%20share%20more%20trip%20photos%3F"><span>See More via WhatsApp</span></a>
@@ -232,8 +232,8 @@
     <!-- FAQ Teaser (inspired by Olanka FAQ style) -->
     <section id="faq" class="container py-5">
       <div class="text-center mb-4">
-        <h2 class="section-title">FAQs</h2>
-        <p class="text-muted">Quick answers to common questions</p>
+        <h2 class="section-title" style="color: #FFD700;">FAQs</h2>
+        <p style="color: #FFD700;">Quick answers to common questions</p>
       </div>
       <div class="accordion shadow-sm" id="faqAccordion">
         <div class="accordion-item">
@@ -280,24 +280,6 @@
         <h3 class="mb-3">Start your journey — contact us for a custom plan</h3>
         <a class="button-52" role="button" href="https://wa.me/94700000000?text=Let%27s%20plan%20my%20Sri%20Lanka%20trip.">Message on WhatsApp</a>
       </div>
-    </section>
-
-    <!-- About Us (placeholder) -->
-    <section id="about" class="container py-5">
-      <div class="text-center mb-3">
-        <h2 class="section-title">About Us</h2>
-        <p class="text-muted">[You’ll fill this section]</p>
-      </div>
-      <!-- leave empty for now -->
-    </section>
-
-    <!-- Contact Us (placeholder) -->
-    <section id="contact" class="container py-5">
-      <div class="text-center mb-3">
-        <h2 class="section-title">Contact Us</h2>
-        <p class="text-muted">[You’ll fill this section — form or contact details]</p>
-      </div>
-      <!-- leave empty for now -->
     </section>
 
     <!-- Floating WhatsApp popup -->

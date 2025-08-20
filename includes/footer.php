@@ -12,10 +12,10 @@
       <div class="col-6 col-md-2">
         <h6 class="fw-bold mb-3">Explore</h6>
         <ul class="list-unstyled small">
-          <li><a href="#" class="footer-link">Home</a></li>
-          <li><a href="#about" class="footer-link">About Us</a></li>
-          <li><a href="#offers" class="footer-link">Tours</a></li>
-          <li><a href="#gallery" class="footer-link">Gallery</a></li>
+          <li><a href="/Dinura_Project_001-German-Travelers/pages/home/" class="footer-link">Home</a></li>
+          <li><a href="/Dinura_Project_001-German-Travelers/pages/about/" class="footer-link">About Us</a></li>
+          <li><a href="/Dinura_Project_001-German-Travelers/pages/offers/" class="footer-link">Our Offers</a></li>
+          <li><a href="/Dinura_Project_001-German-Travelers/pages/gallery/" class="footer-link">Gallery</a></li>
         </ul>
       </div>
 
@@ -23,8 +23,8 @@
       <div class="col-6 col-md-2">
         <h6 class="fw-bold mb-3">Support</h6>
         <ul class="list-unstyled small">
-          <li><a href="#faq" class="footer-link">FAQs</a></li>
-          <li><a href="#contact" class="footer-link">Contact</a></li>
+          <li><a href="/Dinura_Project_001-German-Travelers/pages/blog/" class="footer-link">Blog</a></li>
+          <li><a href="/Dinura_Project_001-German-Travelers/pages/contact/" class="footer-link">Contact</a></li>
           <li><a href="https://wa.me/94700000000" class="footer-link">WhatsApp</a></li>
         </ul>
       </div>
