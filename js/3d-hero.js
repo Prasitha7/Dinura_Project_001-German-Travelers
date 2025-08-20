@@ -6,13 +6,13 @@
   window.init3DHero = function init3DHero(options) {
     const {
       modelPath,
-      cameraDistance = 3.2,   // closer (zoomed-in)
+      cameraDistance = 3.2,   // closer 
       modelEnvIntensity = 3.5,
       spinSpeed = 8,          // steady degrees per second
       // NEW: interaction tuning
-      scrollXRange = 1.6,     // total horizontal travel due to scroll (units)
-      mouseYRange = 1.0,      // total vertical travel due to mouse (units)
-      followDamp = 0.08       // smoothing (0..1), higher = snappier
+      scrollXRange = 1.6,     // total horizontal travel 
+      mouseYRange = 1.0,      // total vertical travel 
+      followDamp = 0.08       // smoothing 
     } = options || {};
 
     const canvas = document.getElementById("bg-canvas");
@@ -121,7 +121,7 @@
         box.getCenter(center);
         model.position.sub(center);
 
-        // Scale to fill ~80% of view height at current cameraDistance
+        // Scale to fill ~x% of view height at current cameraDistance
         const size = box.getSize(new THREE.Vector3());
         const maxDim = Math.max(size.x, size.y, size.z);
         const targetScreenFill = 1.3;

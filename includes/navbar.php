@@ -8,12 +8,12 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0 me-3">
-            <li class="nav-item"><a class="nav-link" href="/Dinura_Project_001-German-Travelers/pages/home/">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="/Dinura_Project_001-German-Travelers/pages/about/">About Us</a></li>
-            <li class="nav-item"><a class="nav-link" href="/Dinura_Project_001-German-Travelers/pages/offers/">Our Offers</a></li>
-            <li class="nav-item"><a class="nav-link" href="/Dinura_Project_001-German-Travelers/pages/gallery/">Gallery</a></li>
-            <li class="nav-item"><a class="nav-link" href="/Dinura_Project_001-German-Travelers/pages/contact/">Contact Us</a></li>
-            <li class="nav-item"><a class="nav-link" href="/Dinura_Project_001-German-Travelers/pages/blog/">Blog</a></li>
+            <li class="nav-item"><a class="nav-link" href="../home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="../about/">About Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="../offers/">Our Offers</a></li>
+            <li class="nav-item"><a class="nav-link" href="../gallery/">Gallery</a></li>
+            <li class="nav-item"><a class="nav-link" href="../contact/">Contact Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="../blog/">Blog</a></li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Language</a>
               <ul class="dropdown-menu">
